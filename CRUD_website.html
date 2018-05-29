@@ -1,0 +1,45 @@
+
+<html lang="en">                                   <!-- starts HTML and specifies the language!-->
+   <head>                                          <!--container for metadata (data about data) and is placed between the <html> tag and the <body> tag!-->
+      <link rel='stylesheet' href='styles.css'>    <!--loads the styles.css file from the same folder !-->
+      <title>CRUD_website</title>                 <!--required in HTML documents and used to define the title of the document!-->
+   </head>                                         <!--container for all the head elements!-->
+   <body style="background-color:#266ADF;">
+      <center>
+         <img src=book.jpg border="0px" 
+               width="400px" height="100px" >
+      </center>
+      <br>
+      <br>
+      <center>
+         <form action='create.php' method = 'post'><!--needed to send info to php file !-->
+            <input type='text' placeholder='author' name='author' genre="advancedSearchTextBox">
+            <input type='text' placeholder='title' name='title' genre="advancedSearchTextBox">
+              <select id='select' name='genre'>
+                 <option value="Fantasy" >Fantasy</option>
+                 <option value="Fiction" >Fiction</option>
+                 <option value="Nonfiction" >Nonfiction</option>
+                 <option value="Mystery" >Mystery</option>
+                 <option value="Sci fi" >Sci fi</option>
+                
+               </select>
+           
+            <input name = 'create' type = 'submit' value = 'Submit Info'>
+
+   
+         </form>
+         Find Genres of Books
+         <form action= 'read.php' method = 'post'>
+            <select id='select' name='genre'>
+               <option value="Fantasy" >Fantasy</option>
+                 <option value="Fiction" >Fiction</option>
+                 <option value="Nonfiction" >Nonfiction</option>
+                 <option value="Mystery" >Mystery</option>
+                 <option value="Sci fi" >Sci fi</option>
+            </select>
+               <p></p>
+            <input name = 'read'   type = 'submit' value = 'Find Info'>
+         </form>
+      </center>
+   </body>
+</html>
